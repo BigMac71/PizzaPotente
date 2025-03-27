@@ -13,9 +13,9 @@ Input::sanitizeOrderPOST();
 if ($_POST['numberofpizzas']) {
     // add number to existing orderline for this pizza if it exists
     $i = 0;
-    while (isset($_SESSION['temporderlines'][i])) {
-        if ($_SESSION['temporderlines'][i]['productID'] == $_SESSION['pizzaID']) {
-            $_SESSION['temporderlines'][i]['number'] += $_SESSION['numberofpizzas'];
+    while (isset($_SESSION['temporderlines'][$i])) {
+        if ($_SESSION['temporderlines'][$i]['productID'] == $_SESSION['pizzaID']) {
+            $_SESSION['temporderlines'][$i]['number'] += $_SESSION['numberofpizzas'];
             $i = -1;
         }
         $i++;
