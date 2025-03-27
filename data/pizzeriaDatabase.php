@@ -3,9 +3,9 @@
 // author   :   sven.croon
 
 abstract class PizzeriaDatabase {
-    private static $dsn = 'mysql:host=localhost;dbname=pizzeria;charset=utf8';
-    private static $usr = 'pizzaAdmin';
-    private static $pwd = 'p1zza@dm1n';
+    private static $dsn = 'mysql:host=localhost;dbname=ppdb;charset=utf8';
+    private static $usr = 'root';
+    private static $pwd = '';
     // (dis)connectors
     public static function connectDB() {
         try {
