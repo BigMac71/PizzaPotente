@@ -1,9 +1,10 @@
+
 <?php
 // file     :   presentation/about.php
 // author   :   sven.croon
 
 // variables:
-// -----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------- 
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +24,7 @@
     ?>
     <div class ='about'>
         <p>In 1897 an Italian immigrant reinvented a Napoletana staple food into one of the worlds most eaten foods.</p>
-        <p>Diest was the birth place of Belgian style pizza.
+        <p>Diest was the birth place of Belgian style pizza.</p>
         <p>During the year of 1905, Pizza Potente was licensed by the City of Diest, becoming Belgium's First Pizzeria.</p>
         <p>Over 100 years and still coveted as one of the Best Pizzeria's in the country.</p>
         <p>Highly regarded and rated as the Best of Flanders, a Region of Pizzeria's.</p>
@@ -33,13 +34,15 @@
     <div id='map'>&nbsp;</div>
         <script>
             function initMap() {
-            var mapDiv = document.getElementById('map');
-            var map = new google.maps.Map(mapDiv, {
-                center: {lat: 50.98582, lng: 5.05283},
-                zoom: 13});
+                var mapDiv = document.getElementById('map');
+                var map = new google.maps.Map(mapDiv, {
+                    center: {lat: 50.98582, lng: 5.05283},
+                    zoom: 13
+                });
             }
         </script>
-        <script src='https://maps.googleapis.com/maps/api/js?callback=initMap' async defer></script>
-  </body>
+<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB8v8STTb3tnHZA8kOt9OtxGhZi-Y-rJmg&callback=initMap' async defer></script>
+
+</body>
 
 </html>
