@@ -474,4 +474,4 @@ composer.lock
 *.scss.map
 
 # custom files for PizzaPotente
-data/pizzeriaDatabase.php
+/data/pizzeriaDatabase.php

@@ -38,8 +38,8 @@
                 center: {lat: 50.98582, lng: 5.05283},
                 zoom: 13});
             }
-        </script>
-        <script src='https://maps.googleapis.com/maps/api/js?callback=initMap' async defer></script>
-  </body>
+       </script>
+      <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8v8STTb3tnHZA8kOt9OtxGhZi-Y-rJmg&loading=async&callback=initMap"> </script> */
+</body>
 
 </html>
