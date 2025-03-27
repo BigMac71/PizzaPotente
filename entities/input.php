@@ -40,7 +40,8 @@ abstract class Input {
             $_SESSION['pizzaname'] = filter_input(INPUT_POST, 'pizzaname', FILTER_SANITIZE_STRING);
         }
         if (isset($_POST['unitprice'])) {
-            $_SESSION['unitprice'] = filter_input(INPUT_POST, 'unitprice', FILTER_VALIDATE_INT);
+            $_SESSION['unitprice'] = filter_input(INPUT_POST, 'unitprice', FILTER_VALIDATE_FLOAT);
+
         }
         if (isset($_POST['numberofpizzas'])) {
             $_SESSION['numberofpizzas'] = filter_input(INPUT_POST, 'numberofpizzas', FILTER_VALIDATE_INT, ['options' => ['min_range'=>0, 'max_range'=>20]]);
