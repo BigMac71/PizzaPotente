@@ -475,3 +475,4 @@ composer.lock
 
 # custom files for PizzaPotente
 data/pizzeriaDatabase.php
+.php-preview-router.php
