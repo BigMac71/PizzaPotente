@@ -3,7 +3,7 @@
 // author   :   sven.croon
 
 abstract class ProductDAO {
-    public function getProducts($minPrice = 0, $maxPrice = 9999) {
+    public static function getProducts($minPrice = 0, $maxPrice = 9999) {
         $dbh = PizzeriaDatabase::connectDB();
         $sql = 'SELECT ID, name, unitprice FROM products WHERE (unitprice >= :minPrice AND unitprice <= :maxPrice)';
         $stmt = $dbh->prepare($sql);
