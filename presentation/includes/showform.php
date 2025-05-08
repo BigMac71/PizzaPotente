@@ -14,17 +14,19 @@ if (isset($_SESSION['form'])) {
         $_SESSION['form'] = filter_input(INPUT_GET, 'login', FILTER_SANITIZE_STRING);
     }
 } else {
-    $_SESSION['form'] = isset($_COOKIE['PizzaPotente'])? 'login' : 'register';
+    // Set anonymous login as default
+    $_SESSION['form'] = 'registertemp';
 }
 switch ($_SESSION['form']) {
     case 'registertemp':
-        require 'presentation/includes/register.php';
+        require 'presentation/includes/noregister.php';
         require 'presentation/includes/nologin.php';
         break;
     case 'login':
         require 'presentation/includes/noregister.php';
         require 'presentation/includes/login.php';
         break;
+    case 'register':
     default:
         require 'presentation/includes/register.php';
         require 'presentation/includes/login.php';
