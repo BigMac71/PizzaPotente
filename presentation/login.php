@@ -45,19 +45,12 @@ if (isset($_POST['submit'])) {
     ?>
     <div class='login'>
         <h2>Registration / Login Form</h2>
-        <div class='login_left'>
-            <div class='linkButton'>
-                &#10154;&nbsp;<a href='index.php?display=login&login=register'>register (create an account)</a>
-            </div>
-            <div class='linkButton'>
-                &#10154;&nbsp;<a href='index.php?display=login&login=registertemp'>log in as guest (don't register)</a>
-            </div>
-            <div class='emptyspace'></div>
-            <div class='linkButton'>
-                &#10154;&nbsp;<a href='index.php?display=login&login=login'>login (I already have an account)</a>
-            </div>
-        </div>
         <?php require 'presentation/includes/showform.php'; ?>
+        <div class='login_buttons'>
+            <button onclick="window.location.href='index.php?display=login&login=register'" class="btn">Register</button>
+            <button onclick="window.location.href='index.php?display=login&login=registertemp'" class="btn btn-primary">Anonymous Login</button>
+            <button onclick="window.location.href='index.php?display=login&login=login'" class="btn">Login</button>
+        </div>
     </div>
 </body>
 
