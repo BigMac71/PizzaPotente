@@ -1,7 +1,7 @@
 @charset 'utf8';
 
-//  file    :   css/pizzapotente.css
-//  author  :   sven.croon
+/*  file    :   css/pizzapotente.css
+  author  :   sven.croon */
 
 html {
     -webkit-box-sizing: border-box;
@@ -328,7 +328,7 @@ input::-webkit-input-placeholder {
     margin-top: 1vh;
     padding: 0.5em;
     background: rgba(79, 79, 79, 0.8);
-    // outline: 1px solid black;
+    outline: 1px solid black;
 }
 .delivery_address,
 .message {
@@ -481,4 +481,94 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: bold;
     font-size: 2.5vmin;
     border: 3px dashed red;
+}
+
+.login_buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.login_buttons .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.login_buttons .btn:hover {
+    background-color: #ddd;
+}
+
+button.btn.btn-primary {
+    background-color: rgba(79, 79, 79, 0.70) !important;
+    color: white !important;
+    border-color: rgba(79, 79, 79, 0.70) !important;
+}
+
+button.btn.btn-primary:hover {
+    background-color: rgba(100, 100, 100, 0.70) !important;
+    border-color: rgba(100, 100, 100, 0.70) !important;
+}
+
+#submit {
+    height: 5vh;
+    line-height: 4.5vh;
+    margin-top: 5vh;
+    font-size: 3vmin;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.25em;
+    background-color: rgba(79, 79, 79, 0.70);
+}
+
+#submit:hover {
+    background-color: rgba(100, 100, 100, 0.70);
+}
+
+.login_buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.login_buttons .btn {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: rgba(79, 79, 79, 0.70);
+    border: none;
+    border-radius: 0.25em;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    text-transform: none;
+    letter-spacing: normal;
+    box-shadow: none;
+}
+
+.login_buttons .btn:hover {
+    background-color: rgba(100, 100, 100, 0.70);
+    color: white;
+}
+
+.login_buttons .btn:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+.login_buttons .btn-primary {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.login_buttons .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
 }
